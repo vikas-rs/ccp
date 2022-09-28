@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ErrorsTreeView.DIALOG_SETTINGS">
+		<item key="SORTING_ORDER" value="Description,true,Resource,true,Location,true,Severity,true,Status,true,Origin,true"/>
+		<item key="TYPE_OF_GROUPPING" value="5"/>
+		<item key="COLUMNS" value="Description;Taxonomy;Resource;Location;Severity;Status;Origin"/>
+	</section>
+</section>

@@ -1,0 +1,1 @@
+D:\projects\ccp\.metadata\.plugins\org.eclipse.core.resources\.projects\cxx_testsuite\com.klocwork.inforceeclipse\.kwlp\workingcache\tables\obj\uninitialized_array_003.cpp_20.o;D:\projects\ccp\cxx_testsuite\uninitialized_array_003.cpp
