@@ -1,0 +1,16 @@
+Working directory: "D:\projects\ccp\cxx_testsuite"
+Command line arguments: "--url" "http://localhost:8080/cxx" "-o" "kwtables_cxx" "kwinject.out" "--incremental"
+-----
+Klocwork 22.2.0.62
+Build server DESKTOP-9H9HNA9([192.168.0.135])
+Installation directory: "D:\Klocwork\Server 22.2"
+Tables directory: "D:\projects\ccp\cxx_testsuite\kwtables_cxx"
+Jobs number: 9
+-----
+Incremental build message: Updated configuration checksum: 1662458861864;0e2603ab5a49a85fa6d0e0f5d0357d37en
+8 September, 2022 11:39:35 AM IST: Running build preparation stage...
+Incremental build message: Analysing build specification changes...
+Incremental build message: Analysing build specification changes...
+Incremental build message: Analysing source files dependencies...
+8 September, 2022 11:39:35 AM IST: Build preparation stage completed
+The project is up to date

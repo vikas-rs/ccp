@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorList xmlns="http://www.klocwork.com/inForce/report/1.0">
+<problem>
+ <problemID>1</problemID>
+ <serverProblemID>20</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\uninitialized_array_001.cpp</file>
+ <line>12</line>
+ <method>uninitialized_array_001_P</method>
+ <code>UNINIT.STACK.ARRAY.MUST</code>
+ <message>&apos;str&apos; array elements are used uninitialized in this function.</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>2</problemID>
+ <serverProblemID>19</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\null_pointer_dereference_004.cpp</file>
+ <line>10</line>
+ <method>null_pointer_dereference_004_P</method>
+ <code>NPD.FUNC.MUST</code>
+ <message>Pointer &apos;p&apos; returned from call to function &apos;returnSensorData&apos; at line 9 may be NULL and will be dereferenced at line 10.</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>3</problemID>
+ <serverProblemID>23</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\uninitialized_heap_001.cpp</file>
+ <line>23</line>
+ <method>uninitialized_heap_001</method>
+ <code>UNINIT.HEAP.MUST</code>
+ <message>&apos;ps-&gt;ptr&apos; gets its value from uninitialized heap memory area.</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>4</problemID>
+ <serverProblemID>21</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\uninitialized_array_002.cpp</file>
+ <line>23</line>
+ <method>uninitialized_array_002</method>
+ <code>UNINIT.STACK.ARRAY.MUST</code>
+ <message>&apos;str&apos; array elements are used uninitialized in this function.</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>5</problemID>
+ <serverProblemID>8</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\freeing_non_heap_memory_001.cpp</file>
+ <line>9</line>
+ <method>freeing_non_heap_memory_001_P</method>
+ <code>FNH.MUST</code>
+ <message>Freeing of non-heap memory from &apos;localArray&apos;. Memory referenced by &apos;localArray&apos; is illegally freed by passing argument 1 to function &apos;delete[]&apos; at line 9</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Error</severity>
+ <severitylevel>2</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>6</problemID>
+ <serverProblemID>18</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\null_pointer_dereference_003.cpp</file>
+ <line>13</line>
+ <method>null_pointer_dereference_003_P</method>
+ <code>NPD.GEN.MIGHT</code>
+ <message>Null pointer &apos;p&apos; that comes from line 9 may be dereferenced at line 13.</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>7</problemID>
+ <serverProblemID>22</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\uninitialized_array_003.cpp</file>
+ <line>10</line>
+ <method>uninitialized_array_003_P</method>
+ <code>UNINIT.STACK.ARRAY.MUST</code>
+ <message>&apos;arr&apos; array elements are used uninitialized in this function.</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>8</problemID>
+ <serverProblemID>9</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\freeing_non_heap_memory_002.cpp</file>
+ <line>12</line>
+ <method>freeing_non_heap_memory_002_P</method>
+ <code>FNH.MUST</code>
+ <message>Freeing of non-heap memory from &apos;localArray&apos;. Memory referenced by &apos;localArray&apos; is illegally freed by passing argument 1 to function &apos;sub_call_freeing_non_heap_memory_002_free&apos; at line 12</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Error</severity>
+ <severitylevel>2</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>9</problemID>
+ <serverProblemID>10</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\freeing_non_heap_memory_002.cpp</file>
+ <line>13</line>
+ <method>freeing_non_heap_memory_002_P</method>
+ <code>FNH.MUST</code>
+ <message>Freeing of non-heap memory from &apos;localArray&apos;. Memory referenced by &apos;localArray&apos; is illegally freed by passing argument 1 to function &apos;freeing_non_heap_memory_002_free&apos; at line 13</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Error</severity>
+ <severitylevel>2</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>10</problemID>
+ <serverProblemID>11</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\freeing_non_heap_memory_002.cpp</file>
+ <line>13</line>
+ <method>freeing_non_heap_memory_002_P</method>
+ <code>UFM.FFM.MUST</code>
+ <message>Object &apos;localArray&apos; was freed at line 13 after being freed by calling &apos;sub_call_freeing_non_heap_memory_002_free&apos; at line 12</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>11</problemID>
+ <serverProblemID>16</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\null_pointer_dereference_002.cpp</file>
+ <line>19</line>
+ <method>null_pointer_dereference_002_P</method>
+ <code>NPD.CHECK.MUST</code>
+ <message>Pointer &apos;p&apos; checked for NULL at line 16 will be dereferenced at line 19.</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>12</problemID>
+ <serverProblemID>17</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\null_pointer_dereference_002.cpp</file>
+ <line>19</line>
+ <method>null_pointer_dereference_002_P</method>
+ <code>NPD.GEN.MUST</code>
+ <message>Null pointer &apos;p&apos; that comes from line 14 will be dereferenced at line 19.</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>13</problemID>
+ <serverProblemID>14</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\memory_leak_001.cpp</file>
+ <line>15</line>
+ <method>memory_leak_001</method>
+ <code>MLK.MIGHT</code>
+ <message>Possible memory leak. Dynamic memory stored in &apos;foo&apos; allocated through function &apos;memory_leak_001_assign&apos; at line 15 can be lost at line 15</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Error</severity>
+ <severitylevel>2</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>14</problemID>
+ <serverProblemID>15</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\null_pointer_dereference_001.cpp</file>
+ <line>12</line>
+ <method>null_pointer_dereference_001_P</method>
+ <code>NPD.FUNC.MUST</code>
+ <message>Pointer &apos;p&apos; returned from call to function &apos;xmalloc&apos; at line 11 may be NULL and will be dereferenced at line 12.</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>15</problemID>
+ <serverProblemID>7</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\buffer_overflow_005.cpp</file>
+ <line>10</line>
+ <method>buffer_overflow_005_P</method>
+ <code>ABV.GENERAL</code>
+ <message>Array &apos;arr&apos; of size 5 may use index value(s) 19</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>16</problemID>
+ <serverProblemID>12</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\freeing_unallocated_memory_001.cpp</file>
+ <line>37</line>
+ <method>a6</method>
+ <code>FUM.GEN.MUST</code>
+ <message>Freeing of unallocated memory from &apos;x-&gt;l.next&apos;. Memory referenced by &apos;x-&gt;l.next&apos; was freed by passing argument 1 to function &apos;free&apos; at line 37</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>17</problemID>
+ <serverProblemID>13</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\freeing_unallocated_memory_001.cpp</file>
+ <line>38</line>
+ <method>a6</method>
+ <code>MLK.MUST</code>
+ <message>Memory leak. Dynamic memory stored in &apos;x&apos; allocated through function &apos;malloc&apos; at line 34 is lost at line 38</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Error</severity>
+ <severitylevel>2</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>18</problemID>
+ <serverProblemID>5</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\buffer_overflow_004.cpp</file>
+ <line>13</line>
+ <method>buffer_overflow_004_P</method>
+ <code>NNTS.MIGHT</code>
+ <message>Buffer overflow of &apos;buf&apos; due to non null terminated string &apos;buf&apos;</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>19</problemID>
+ <serverProblemID>6</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\buffer_overflow_004.cpp</file>
+ <line>13</line>
+ <method>buffer_overflow_004_P</method>
+ <code>NNTS.MIGHT</code>
+ <message>Buffer overflow of &apos;tgt&apos; due to non null terminated string &apos;buf&apos;</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>20</problemID>
+ <serverProblemID>4</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\buffer_overflow_003.cpp</file>
+ <line>21</line>
+ <method>buffer_overflow_003</method>
+ <code>ABV.STACK</code>
+ <message>Array &apos;local_array&apos; of size 7 may use index value(s) 15</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>21</problemID>
+ <serverProblemID>3</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\buffer_overflow_002.cpp</file>
+ <line>11</line>
+ <method>buffer_overflow_002_P</method>
+ <code>ABV.GENERAL</code>
+ <message>Array &apos;a&apos; of size 2 may use index value(s) 2..7</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>22</problemID>
+ <serverProblemID>24</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\uninitialized_variable_002.cpp</file>
+ <line>20</line>
+ <method>init_struct</method>
+ <code>FUNCRET.GEN</code>
+ <message>Non-void function does not return value</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>23</problemID>
+ <serverProblemID>25</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\uninitialized_variable_002.cpp</file>
+ <line>26</line>
+ <method>uninitialized_variable_002</method>
+ <code>UNINIT.STACK.MUST</code>
+ <message>&apos;x.a&apos; is used uninitialized in this function.</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>24</problemID>
+ <serverProblemID>1</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\buffer_overflow_001.cpp</file>
+ <line>11</line>
+ <method>buffer_overflow_001_P</method>
+ <code>ABV.GENERAL</code>
+ <message>Array &apos;fixed_buf&apos; of size 10 may use index value(s) 10..24</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+<problem>
+ <problemID>25</problemID>
+ <serverProblemID>2</serverProblemID>
+ <isSystem>true</isSystem>
+ <inConnected>true</inConnected>
+ <inOtherStreams>false</inOtherStreams>
+ <file>D:\projects\ccp\cxx_testsuite\buffer_overflow_001.cpp</file>
+ <line>23</line>
+ <method>buffer_overflow_001_P1</method>
+ <code>ABV.GENERAL</code>
+ <message>Array &apos;fixed_buf&apos; of size 10 may use index value(s) 10..24</message>
+ <citingStatus>Analyze</citingStatus>
+ <owner>unowned</owner>
+ <severity>Critical</severity>
+ <severitylevel>1</severitylevel>
+ <displayAs>Error</displayAs>
+ <taxonomies>
+  <taxonomy name="C and C++" metaInf=""/>
+ </taxonomies>
+</problem>
+</errorList>

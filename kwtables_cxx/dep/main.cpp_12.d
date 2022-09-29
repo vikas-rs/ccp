@@ -1,0 +1,1 @@
+D:\projects\ccp\cxx_testsuite\kwtables_cxx\obj\main.cpp_12.o;D:\projects\ccp\cxx_testsuite\main.cpp;D:\projects\ccp\cxx_testsuite\main.h

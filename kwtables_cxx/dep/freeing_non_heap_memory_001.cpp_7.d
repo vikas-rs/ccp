@@ -1,0 +1,1 @@
+D:\projects\ccp\cxx_testsuite\kwtables_cxx\obj\freeing_non_heap_memory_001.cpp_7.o;D:\projects\ccp\cxx_testsuite\freeing_non_heap_memory_001.cpp

@@ -1,0 +1,214 @@
+---------------------------------------------------------------------------
+1 (System: 20) D:\projects\ccp\cxx_testsuite\uninitialized_array_001.cpp:12 UNINIT.STACK.ARRAY.MUST (1:Critical) Analyze
+'str' array elements are used uninitialized in this function.
+  * uninitialized_array_001.cpp:11: '*str' is declared
+  * uninitialized_array_001.cpp:12: 'str' array elements are used uninitialized.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+2 (System: 19) D:\projects\ccp\cxx_testsuite\null_pointer_dereference_004.cpp:10 NPD.FUNC.MUST (1:Critical) Analyze
+Pointer 'p' returned from call to function 'returnSensorData' at line 9 may be NULL and will be dereferenced at line 10.
+  * null_pointer_dereference_004.cpp:9: 'p' is assigned the return value from function 'returnSensorData'.
+    * functions_001.cpp:7: 'getNullSensor()' is assigned the return value from function 'getNullSensor'.
+      * functions_002.cpp:8: 'getNullSensor' explicitly returns a NULL value.
+    * functions_001.cpp:7: 'getNullSensor()' is returned by 'returnSensorData'.
+  * null_pointer_dereference_004.cpp:10: 'p' is explicitly dereferenced.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+3 (System: 23) D:\projects\ccp\cxx_testsuite\uninitialized_heap_001.cpp:23 UNINIT.HEAP.MUST (1:Critical) Analyze
+'ps->ptr' gets its value from uninitialized heap memory area.
+  * uninitialized_heap_001.cpp:21: 'ps->ptr' memory is allocated through call to 'malloc'
+  * uninitialized_heap_001.cpp:23: 'ps->ptr' is used, but is uninitialized.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+4 (System: 21) D:\projects\ccp\cxx_testsuite\uninitialized_array_002.cpp:23 UNINIT.STACK.ARRAY.MUST (1:Critical) Analyze
+'str' array elements are used uninitialized in this function.
+  * uninitialized_array_002.cpp:22: '*str' is declared
+  * uninitialized_array_002.cpp:23: 'str' array elements are used uninitialized.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+5 (System: 8) D:\projects\ccp\cxx_testsuite\freeing_non_heap_memory_001.cpp:9 FNH.MUST (2:Error) Analyze
+Freeing of non-heap memory from 'localArray'. Memory referenced by 'localArray' is illegally freed by passing argument 1 to function 'delete[]' at line 9
+  * freeing_non_heap_memory_001.cpp:9: 'localArray' is freed by passing argument 1 to function 'delete[]'.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+6 (System: 18) D:\projects\ccp\cxx_testsuite\null_pointer_dereference_003.cpp:13 NPD.GEN.MIGHT (1:Critical) Analyze
+Null pointer 'p' that comes from line 9 may be dereferenced at line 13.
+  * null_pointer_dereference_003.cpp:9: 'p' has been assigned a NULL value.
+  * null_pointer_dereference_003.cpp:10: g_suppSensorData == 1 is false
+  * null_pointer_dereference_003.cpp:13: 'p' is explicitly dereferenced.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+7 (System: 22) D:\projects\ccp\cxx_testsuite\uninitialized_array_003.cpp:10 UNINIT.STACK.ARRAY.MUST (1:Critical) Analyze
+'arr' array elements are used uninitialized in this function.
+  * uninitialized_array_003.cpp:8: '*arr' is declared
+  * uninitialized_array_003.cpp:10: 'arr' array elements are used uninitialized.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+8 (System: 9) D:\projects\ccp\cxx_testsuite\freeing_non_heap_memory_002.cpp:12 FNH.MUST (2:Error) Analyze
+Freeing of non-heap memory from 'localArray'. Memory referenced by 'localArray' is illegally freed by passing argument 1 to function 'sub_call_freeing_non_heap_memory_002_free' at line 12
+  * freeing_non_heap_memory_002.cpp:12: 'localArray' is freed by passing argument 1 to function 'sub_call_freeing_non_heap_memory_002_free'.
+    * functions_001.cpp:26: Tracking 'memory'.
+    * functions_001.cpp:28: 'memory' is freed by calling 'freeing_non_heap_memory_002_free'.
+      * functions_002.cpp:25: Tracking 'memory'.
+      * functions_002.cpp:27: 'memory' is freed by calling 'delete[]'.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+9 (System: 10) D:\projects\ccp\cxx_testsuite\freeing_non_heap_memory_002.cpp:13 FNH.MUST (2:Error) Analyze
+Freeing of non-heap memory from 'localArray'. Memory referenced by 'localArray' is illegally freed by passing argument 1 to function 'freeing_non_heap_memory_002_free' at line 13
+  * freeing_non_heap_memory_002.cpp:13: 'localArray' is freed by passing argument 1 to function 'freeing_non_heap_memory_002_free'.
+    * functions_002.cpp:25: Tracking 'memory'.
+    * functions_002.cpp:27: 'memory' is freed by calling 'delete[]'.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+10 (System: 11) D:\projects\ccp\cxx_testsuite\freeing_non_heap_memory_002.cpp:13 UFM.FFM.MUST (1:Critical) Analyze
+Object 'localArray' was freed at line 13 after being freed by calling 'sub_call_freeing_non_heap_memory_002_free' at line 12
+  * freeing_non_heap_memory_002.cpp:12: 'localArray' is freed by calling 'sub_call_freeing_non_heap_memory_002_free'.
+    * functions_001.cpp:26: Tracking 'memory'.
+    * functions_001.cpp:28: 'memory' is freed by calling 'freeing_non_heap_memory_002_free'.
+      * functions_002.cpp:25: Tracking 'memory'.
+      * functions_002.cpp:27: 'memory' is freed by calling 'delete[]'.
+  * freeing_non_heap_memory_002.cpp:13: 'localArray' is double freed by calling 'freeing_non_heap_memory_002_free'.
+    * functions_002.cpp:25: Tracking 'memory'.
+    * functions_002.cpp:27: 'memory' is freed by calling 'delete[]'.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+11 (System: 16) D:\projects\ccp\cxx_testsuite\null_pointer_dereference_002.cpp:19 NPD.CHECK.MUST (1:Critical) Analyze
+Pointer 'p' checked for NULL at line 16 will be dereferenced at line 19.
+  * null_pointer_dereference_002.cpp:16: 'p' is checked for NULL.
+  * null_pointer_dereference_002.cpp:16: p is false
+  * null_pointer_dereference_002.cpp:19: 'p' is explicitly dereferenced.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+12 (System: 17) D:\projects\ccp\cxx_testsuite\null_pointer_dereference_002.cpp:19 NPD.GEN.MUST (1:Critical) Analyze
+Null pointer 'p' that comes from line 14 will be dereferenced at line 19.
+  * null_pointer_dereference_002.cpp:10: null_pointer_dereference_002_global is false
+  * null_pointer_dereference_002.cpp:14: 'p' has been assigned a NULL value.
+  * null_pointer_dereference_002.cpp:16: p is false
+  * null_pointer_dereference_002.cpp:19: 'p' is explicitly dereferenced.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+13 (System: 14) D:\projects\ccp\cxx_testsuite\memory_leak_001.cpp:15 MLK.MIGHT (2:Error) Analyze
+Possible memory leak. Dynamic memory stored in 'foo' allocated through function 'memory_leak_001_assign' at line 15 can be lost at line 15
+  * memory_leak_001.cpp:14: Continue loop iteration, while i < 10 is true
+  * memory_leak_001.cpp:15: Dynamic memory stored in 'foo' is allocated by calling function 'memory_leak_001_assign'.
+    * functions_001.cpp:32: 'foo' is allocated by function 'malloc'.
+  * memory_leak_001.cpp:15: Dynamic memory stored in 'foo' is lost.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+14 (System: 15) D:\projects\ccp\cxx_testsuite\null_pointer_dereference_001.cpp:12 NPD.FUNC.MUST (1:Critical) Analyze
+Pointer 'p' returned from call to function 'xmalloc' at line 11 may be NULL and will be dereferenced at line 12.
+  * null_pointer_dereference_001.cpp:11: 'p' is assigned the return value from function 'xmalloc'.
+    * functions_002.cpp:34: 'xmalloc' explicitly returns a NULL value.
+  * null_pointer_dereference_001.cpp:12: 'p' is explicitly dereferenced.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+15 (System: 7) D:\projects\ccp\cxx_testsuite\buffer_overflow_005.cpp:10 ABV.GENERAL (1:Critical) Analyze
+Array 'arr' of size 5 may use index value(s) 19
+  * buffer_overflow_005.cpp:8: Array 'arr' size is 5.
+  * buffer_overflow_005.cpp:10: sizeof (arr) - 1
+    * buffer_overflow_005.cpp:10: Constant expression 'sizeof(const int[5])' is '== 20'
+    * buffer_overflow_005.cpp:10: Result of expression 'sizeof(const int[5]) - 1' is '== 19'
+  * buffer_overflow_005.cpp:10: Possible attempt to access element 19 of array 'arr'.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+16 (System: 12) D:\projects\ccp\cxx_testsuite\freeing_unallocated_memory_001.cpp:37 FUM.GEN.MUST (1:Critical) Analyze
+Freeing of unallocated memory from 'x->l.next'. Memory referenced by 'x->l.next' was freed by passing argument 1 to function 'free' at line 37
+  * freeing_unallocated_memory_001.cpp:36: 'x->l.next' is assigned
+  * freeing_unallocated_memory_001.cpp:37: 'x->l.next' is freed by passing argument 1 to function 'free'.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+17 (System: 13) D:\projects\ccp\cxx_testsuite\freeing_unallocated_memory_001.cpp:38 MLK.MUST (2:Error) Analyze
+Memory leak. Dynamic memory stored in 'x' allocated through function 'malloc' at line 34 is lost at line 38
+  * freeing_unallocated_memory_001.cpp:34: Dynamic memory stored in 'x' is allocated by calling function 'malloc'.
+  * freeing_unallocated_memory_001.cpp:35: !x is false
+  * freeing_unallocated_memory_001.cpp:38: Dynamic memory stored in '&(x->l.next)' is lost.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+18 (System: 5) D:\projects\ccp\cxx_testsuite\buffer_overflow_004.cpp:13 NNTS.MIGHT (1:Critical) Analyze
+Buffer overflow of 'buf' due to non null terminated string 'buf'
+  * buffer_overflow_004.cpp:12: The size parameter may be less than length of source buffer.
+  * buffer_overflow_004.cpp:12: 'buf' may not be null-terminated after calling 'strncpy'.
+  * buffer_overflow_004.cpp:13: String 'buf' is not properly terminated and is passed as an argument to function 'strcpy'.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+19 (System: 6) D:\projects\ccp\cxx_testsuite\buffer_overflow_004.cpp:13 NNTS.MIGHT (1:Critical) Analyze
+Buffer overflow of 'tgt' due to non null terminated string 'buf'
+  * buffer_overflow_004.cpp:12: The size parameter may be less than length of source buffer.
+  * buffer_overflow_004.cpp:12: 'buf' may not be null-terminated after calling 'strncpy'.
+  * buffer_overflow_004.cpp:13: String 'buf' is not properly terminated and is passed as an argument to function 'strcpy'.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+20 (System: 4) D:\projects\ccp\cxx_testsuite\buffer_overflow_003.cpp:21 ABV.STACK (1:Critical) Analyze
+Array 'local_array' of size 7 may use index value(s) 15
+  * buffer_overflow_003.cpp:21: '15' is passed as argument '$1' to function 'buffer_overflow_003_P'.
+  * buffer_overflow_003.cpp:21: Index value(s) 15 may be used to access array of size 7 while calling 'buffer_overflow_003_P'.
+    * buffer_overflow_003.cpp:21: Function argument '$1' is == 15.
+    * buffer_overflow_003.cpp:21: Value(s) == 15 is used as violation index in function 'buffer_overflow_003_P'.
+      * buffer_overflow_003.cpp:9: Array 'local_array' of size 7 is used.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+21 (System: 3) D:\projects\ccp\cxx_testsuite\buffer_overflow_002.cpp:11 ABV.GENERAL (1:Critical) Analyze
+Array 'a' of size 2 may use index value(s) 2..7
+  * buffer_overflow_002.cpp:8: Array 'a' size is 8.
+  * buffer_overflow_002.cpp:9: i = 0
+  * buffer_overflow_002.cpp:9: Entering loop, because i<sizeof(a) is true
+  * buffer_overflow_002.cpp:9: 'i' iterates from 0 to 7.
+    * buffer_overflow_002.cpp:9: i = i + 1
+      * buffer_overflow_002.cpp:9: Inferred value 'i' is '[0,7]'
+      * buffer_overflow_002.cpp:9: Result of expression 'i + 1' is '[1,8]'
+  * buffer_overflow_002.cpp:11: Possible attempt to access element 2..7 of array 'a'.
+  * buffer_overflow_002.cpp:11: Object 'a' of type 'char[8]' is an array 'int[2]'.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+22 (System: 24) D:\projects\ccp\cxx_testsuite\uninitialized_variable_002.cpp:20 FUNCRET.GEN (1:Critical) Analyze
+Non-void function does not return value
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+23 (System: 25) D:\projects\ccp\cxx_testsuite\uninitialized_variable_002.cpp:26 UNINIT.STACK.MUST (1:Critical) Analyze
+'x.a' is used uninitialized in this function.
+  * uninitialized_variable_002.cpp:24: 'x.a' is declared
+  * uninitialized_variable_002.cpp:26: 'x.a' is used, but is uninitialized.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+24 (System: 1) D:\projects\ccp\cxx_testsuite\buffer_overflow_001.cpp:11 ABV.GENERAL (1:Critical) Analyze
+Array 'fixed_buf' of size 10 may use index value(s) 10..24
+  * buffer_overflow_001.cpp:10: Array 'fixed_buf' size is 10.
+  * buffer_overflow_001.cpp:11: 'fixed_buf' is passed as an argument to function 'sprintf'.
+    * buffer_overflow_001.cpp:11: Length of format string "Very long format string\n" is 24.
+      * buffer_overflow_001.cpp:11: Length of non-format characters is 24.
+Current status 'Analyze'
+
+---------------------------------------------------------------------------
+25 (System: 2) D:\projects\ccp\cxx_testsuite\buffer_overflow_001.cpp:23 ABV.GENERAL (1:Critical) Analyze
+Array 'fixed_buf' of size 10 may use index value(s) 10..24
+  * buffer_overflow_001.cpp:22: Array 'fixed_buf' size is 10.
+  * buffer_overflow_001.cpp:23: 'fixed_buf' is passed as an argument to function 'sprintf'.
+    * buffer_overflow_001.cpp:23: Length of format string "Very long format string\n" is 24.
+      * buffer_overflow_001.cpp:23: Length of non-format characters is 24.
+Current status 'Analyze'
+
+Summary: 0 Local, 25 System
+25 Total Issue(s)
