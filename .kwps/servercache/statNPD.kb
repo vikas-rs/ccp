@@ -1,7 +1,0 @@
-getHighSensor ,int,  CHECKRET 0
-malloc -  CHECKRET 0
-returnSensorData ,int,  CHECKRET 0
-getLowSensor ,  CHECKRET 0
-getNullSensor ,  CHECKRET 0
-memory_leak_001_assign ,  CHECKRET 0
-xmalloc ,  CHECKRET 0

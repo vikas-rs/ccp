@@ -1,4 +1,0 @@
-1;D:\projects\ccp\cxx_testsuite\.kwps\servercache\statNPD_modern.kb
-187168767;D:\projects\ccp\cxx_testsuite\.kwps\servercache\generated.kb
-1755620645;D:\projects\ccp\cxx_testsuite\.kwps\servercache\generated_modern.kb
-3930996084;D:\projects\ccp\cxx_testsuite\.kwps\servercache\statNPD.kb

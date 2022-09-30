@@ -1,1 +1,0 @@
-D:\projects\ccp\cxx_testsuite\kwtables_cxx\obj\uninitialized_variable_002.cpp_23.o;D:\projects\ccp\cxx_testsuite\uninitialized_variable_002.cpp

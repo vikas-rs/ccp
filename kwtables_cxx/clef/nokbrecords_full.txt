@@ -1,5 +1,0 @@
-List of functions with unknown behavior (and their header files)
-
-<SYSTEM>    __srget_r;    C:\cygwin64\usr\include\stdio.h
-<SYSTEM>    __swbuf_r;    C:\cygwin64\usr\include\stdio.h
-<SYSTEM>    ldiv;    C:\cygwin64\usr\include\stdlib.h
