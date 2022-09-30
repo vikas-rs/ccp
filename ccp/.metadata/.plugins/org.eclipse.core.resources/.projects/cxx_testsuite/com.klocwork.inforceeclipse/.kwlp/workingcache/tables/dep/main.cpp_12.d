@@ -1,1 +1,0 @@
-D:\projects\ccp\.metadata\.plugins\org.eclipse.core.resources\.projects\cxx_testsuite\com.klocwork.inforceeclipse\.kwlp\workingcache\tables\obj\main.cpp_12.o;D:\projects\ccp\cxx_testsuite\main.cpp;D:\projects\ccp\cxx_testsuite\main.h
