@@ -3,7 +3,7 @@ Emenda Ltd, 02/05/2018
 Buffer Overflow
 */
 
-#include <stdio.h>.
+#include <stdio.h>
 
 void buffer_overflow_001_P()
 {
